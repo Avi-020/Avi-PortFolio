@@ -73,11 +73,11 @@ const Homepage = () => {
 			<div className="page-content">
 				<NavBar active="home" />
 				<div className="content-wrapper">
-					<div className="homepage-logo-container">
+					{/* <div className="homepage-logo-container">
 						<div style={logoStyle}>
 							<Logo width={logoSize} link={false} />
 						</div>
-					</div>
+					</div> */}
 
 					<div className="homepage-container">
 						<div className="homepage-first-area">
