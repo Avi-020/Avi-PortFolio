@@ -10,15 +10,16 @@ const INFO = {
 		twitter: "https://twitter.com/",
 		github: "https://github.com/Avi-020",
 		linkedin: "https://www.linkedin.com/in/avi-pawar-894355271/",
-		instagram: "https://instagram.com/_avi_pawar_020_?igshid=OGQ5ZDc2ODk2ZA==",
+		instagram:
+			"https://instagram.com/_avi_pawar_020_?igshid=OGQ5ZDc2ODk2ZA==",
 		stackoverflow: "https://stackoverflow.com/",
 		facebook: "https://facebook.com/",
 	},
 
 	homepage: {
-		title: "Full-stack web and mobile app developer.",
+		title: "Full-stack developer and data scientist.",
 		description:
-			"I am a Full stack devloper with expertise in Next.js , React.js and MongoDB. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
+			"I am a Full stack developer and data scientist with expertise in Next.js, React.js, and MongoDB, along with strong skills in Python, NumPy, Pandas, SQL, and Machine Learning. I have experience in building scalable, secure, and reliable web applications, as well as analyzing data and developing data-driven solutions. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality solutions that follow best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer and data scientist.",
 	},
 
 	about: {
@@ -26,8 +27,6 @@ const INFO = {
 		description:
 			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
 	},
-
-	
 
 	projects: [
 		{
