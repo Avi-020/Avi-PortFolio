@@ -79,7 +79,7 @@ const Homepage = () => {
 						</div>
 					</div> */}
 
-					<div className="homepage-container">
+					<div className="homepage-container mt-2">
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
 								<div className="title homepage-title">
