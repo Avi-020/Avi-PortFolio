@@ -3,17 +3,11 @@ import { Helmet } from "react-helmet";
 
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faTwitter,
-	faGithub,
-	faStackOverflow,
-	faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
-import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
@@ -33,7 +27,6 @@ const Homepage = () => {
 	useEffect(() => {
 		const handleScroll = () => {
 			let scroll = Math.round(window.pageYOffset, 2);
-
 			let newLogoSize = 80 - (scroll * 4) / 10;
 
 			if (newLogoSize < oldLogoSize) {
@@ -67,7 +60,7 @@ const Homepage = () => {
 	};
 
 	return (
-		<React.Fragment>
+		<>
 			<Helmet>
 				<title>{INFO.main.title}</title>
 				<meta name="description" content={currentSEO.description} />
@@ -92,7 +85,6 @@ const Homepage = () => {
 								<div className="title homepage-title">
 									{INFO.homepage.title}
 								</div>
-
 								<div className="subtitle homepage-subtitle">
 									{INFO.homepage.description}
 								</div>
@@ -112,16 +104,6 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-socials">
-							{/* <a
-								href={INFO.socials.twitter}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faTwitter}
-									className="homepage-social-icon"
-								/>
-							</a> */}
 							<a
 								href={INFO.socials.github}
 								target="_blank"
@@ -132,16 +114,7 @@ const Homepage = () => {
 									className="homepage-social-icon"
 								/>
 							</a>
-							{/* <a
-								href={INFO.socials.stackoverflow}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faStackOverflow}
-									className="homepage-social-icon"
-								/>
-							</a> */}
+
 							<a
 								href={INFO.socials.instagram}
 								target="_blank"
@@ -152,6 +125,7 @@ const Homepage = () => {
 									className="homepage-social-icon"
 								/>
 							</a>
+
 							<a
 								href={`mailto:${INFO.main.email}`}
 								target="_blank"
@@ -168,15 +142,13 @@ const Homepage = () => {
 							<AllProjects />
 						</div>
 
-						
-
 						<div className="page-footer">
 							<Footer />
 						</div>
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 
